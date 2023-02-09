@@ -1,0 +1,8 @@
+:root{
+    --primary-color: rgb(28, 28, 94);
+    --secondary-color: rgb(245, 160, 0);
+    --bg-color: rgb(22, 22, 22);
+    --text-color: white;
+    --tertiary-color: rgb(88, 88, 88);
+    --quaternary-color: rgb(32, 32, 32);
+}

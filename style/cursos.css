@@ -1,0 +1,153 @@
+h1{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+}
+main{
+    flex-direction: column;
+}
+
+.cursos-lista{
+    flex-wrap: wrap;
+    padding: 0px;
+  
+}
+
+.cursos-lista li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--quaternary-color);
+}
+
+.cursos-item{
+    box-shadow: 3px 3px 3px rgb(66, 66, 66);
+}
+
+.cursos-lista img{
+    width: 100%;
+}
+
+.cursos-descricao{
+    padding: 12px 32px;
+}
+
+span{
+    background-color: var(--secondary-color);
+    width: 24px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.cursos-item:hover span{
+    width: 86px;
+    transition: 0.6s;
+}
+
+.cursos-descricao li{
+    background-color: var(--tertiary-color);
+    border-radius: 6px;
+    text-align: center;
+    padding: 16px 12px;
+    min-height: 28px;
+    max-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.cursos-descricao ul{
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    
+}
+
+.cursos-descricao a{
+    background-color: var(--secondary-color);
+    display:inline-block;
+    width: 240px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -60px;
+    bottom: 20px;
+    transform: rotate(-28deg);
+
+}
+
+.cursos-descricao{
+    position: relative;
+    overflow: hidden;
+}
+
+.wrap-txt{
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+   
+    h1{
+        max-width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+    footer{
+        margin-top: 60px;
+    }
+  .cursos-lista li{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .cursos-descricao a{
+        top: 30px;
+        transform: rotate(45deg);
+    }
+    .cursos-descricao ul{
+       padding: 0px;
+       flex-wrap: wrap;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    
+    h1{
+        max-width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+    footer{
+        margin-top: 60px;
+    }
+    
+    
+    .cursos-lista li{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .cursos-descricao a{
+        top: 30px;
+        transform: rotate(45deg);
+    }
+    .cursos-descricao ul{
+       padding: 0px;
+       flex-wrap: wrap;
+    }
+    
+
+    
+
+}
